@@ -31,7 +31,7 @@ public interface TextSearchResource {
      * @return
      */
     @Path("/top/{id}")
-    @POST
+    @GET
     @Produces("text/csv")
     Response searchTop(@PathParam("id") int id);
 }
